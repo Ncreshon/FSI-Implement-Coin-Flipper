@@ -65,7 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // Clear Button Click Handler
-        // TODO: Reset global variables to 0
+ 
+
+        const clearBtn = document.getElementById('clear');
+
+        clearBtn.addEventListener('click',function(){
+                   // TODO: Reset global variables to 0
+            heads = 0;
+            tails = 0;
+            totalRolls = 0;
+
         // TODO: Update the scoreboard (same logic as in flip button click handler)
+        headsCell.textContent = heads;
+        headsPercent.textContent = '0%';
+        tailsCell.textContent = tails;
+        tailsPercent.textContent = '0%';
+        message.textContent = "Let's get Rolling!"
+        })
 
 })
